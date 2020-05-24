@@ -98,7 +98,7 @@ footer a:hover{opacity: 0.5;}
   .welcome-cta{display: block;}
   .welcome-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
   .loading-box{margin-top: 50%;}
-  .aboutme-card{width: 80%; padding: 10px;}
+  .aboutme-card{width: 100%; padding: 10px;}
   footer a{padding: 0 10px;}
   .up-arrow{display: none;}
   .curva{display: none;}
