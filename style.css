@@ -98,7 +98,7 @@ footer a:hover{opacity: 0.5;}
   .welcome-cta{display: block;}
   .welcome-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
   .loading-box{margin-top: 50%;}
-  .aboutme-card{width: 90%; padding: 10px;}
+  .aboutme-card{width: 80%; padding: 10px;}
   footer a{padding: 0 10px;}
   .up-arrow{display: none;}
   .curva{display: none;}
@@ -116,7 +116,7 @@ footer a:hover{opacity: 0.5;}
   .welcome-cta{display: block;}
   .welcome-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
   .loading-box{margin-top: 50%;}
-  .aboutme-card{width: 90%; padding: 10px;}
+  .aboutme-card{width: 80%; padding: 10px;}
   .up-arrow{display: none;}
   .curva{display: none;}
 }
@@ -125,7 +125,7 @@ footer a:hover{opacity: 0.5;}
   .loading-box{margin-top: 50%;}
   .nav-display-brand{display: none;}
   .welcome{width:80%; height: 100%; padding-top: 10%; padding-bottom: 20%;}
-  .aboutme-card{width: 90%; padding: 10px;}
+  .aboutme-card{width: 80%; padding: 10px;}
   .navbar-brand h1{font-size: 24px; padding-top: 15px;}
   .nav-item{display: inline; font-size: 20px; padding: 0 10px;}
   .up-arrow{display: none;}
@@ -134,5 +134,5 @@ footer a:hover{opacity: 0.5;}
 
  @media (min-width: 1300px) and (max-width: 1400px){
    .welcome{width: 60%;}
-   .aboutme-card{width: 90%;}
+   .aboutme-card{width: 80%;}
  }
