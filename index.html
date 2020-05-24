@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Simone Gatto">
+	  <meta name="description" content="i want to make things that make a difference">
+	  <meta name="keywords" content="html css javascript php mysql fullstack frontend backend">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="icon" href="images/developer.png" type="image/png">
+    <title>Simone Gatto</title>
+  </head>
+
+  <body id="no-scrollbar">
+    <div class="container-fluid">
+      <!---------------LOADER-------------->
+      <div class="row">
+        <div class="col-12">
+          <div class="loading-page">
+            <div class="loading-box">
+              <i class="fa fa-spinner fa-spin" style="font-size: 50px; color: #fff;"></i>
+              <p class="text-center">Configuration</p>
+              <p class="text-center"><span id="count">100</span>% Completed</p>
+              <p class="text-center">Don't close the site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----------NAVBAR-------->
+      <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark pt-sm-5">
+          <div data-aos="fade-left" data-aos-delay="1800" data-aos-duration="1500">
+            <img src="images/me2.png" width="70" height="70" alt="Simone Gatto" class="nav-display-brand ml-md-5 mb-md-2">
+            <a class="navbar-brand ml-md-3" href="progetto.html">
+              <h1 class="navbar-brand-h1">Simone Gatto</h1>
+            </a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+
+          <div data-aos="fade-right" data-aos-delay="1800" data-aos-duration="1500" class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-md-5 ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutme">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" target=_blank href="https://talent.start2impact.it/profile/simone-gatto">Portfolio</a>
+              </li>
+            </ul>
+            <a href="mailto:simonegatto23@gmail.com" class="cta nav-cta mr-5">Write me now</a>
+          </div>
+        </nav>
+      </header>
+
+
+      <!----------------HERO------------------>
+      <div id="home" class="row">
+        <div class="col-12">
+          <section class="welcome mx-auto">
+            <p data-aos="zoom-out-down" data-aos-delay="2000" data-aos-duration="1500" class="welcome-smile">:)</p>
+            <p data-aos="zoom-out-right" data-aos-delay="2150" data-aos-duration="1500" class="welcome-main">Hello, your PC ran into my personal website and you should visit it.
+              <strong>I'm Simone a full-stack developer</strong>, i want to make things that make a difference.</p>
+            <img data-aos="fade-right" data-aos-delay="2300" data-aos-duration="1500" class="welcome-qrcode" src="images/qrbsod.svg" width="100" height="100" alt="QR Code">
+            <p data-aos="fade-left" data-aos-delay="2450" data-aos-duration="1500" class="welcome-second">For more information about me and my work, <strong>go to the next section</strong></p>
+            <p data-aos="fade-left" data-aos-delay="2600" data-aos-duration="1500" class="welcome-third">If you need affable website developer, follow this code:<br/> Click the button: <strong>WRITE_ME_NOW</strong></p>
+            <a href="mailto:simonegatto23@gmail.com" class="cta welcome-cta mx-auto mt-5">Write me now</a>
+          </section>
+        </div>
+      </div>
+
+    <!-----------------WHAT CAN I DO------------------>
+      <div class="container">
+        <div class="row padding-card-1" id="aboutme" >
+          <div class="col-md-6 col-12 pb-5" data-aos="fade-left" data-aos-delay="250" data-aos-duration="800">
+            <div class="aboutme-card">
+              <div class="media">
+                <img class="align-self-center ml-3 mr-5" width="40" height="40" src="images/frontend.png" alt="Frontend">
+                <div class="media-body">
+                  <h2 class="aboutme-h2 pb-3">Front end</h2>
+                  <p class="aboutme-p">Dynamics and user-friendly design. <strong>HTML</strong>, <strong>CSS</strong>, <strong>JS</strong> and <strong>JQuery</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12 pb-5 pt-md-5" data-aos="fade-right" data-aos-delay="250" data-aos-duration="800">
+            <div class="aboutme-card">
+              <div class="media">
+                <img class="align-self-center ml-3 mr-5" width="40" height="40" src="images/backend.png" alt="Backend">
+                <div class="media-body">
+                  <h2 class="aboutme-h2 pb-3">Back end</h2>
+                  <p class="aboutme-p">Your data are in good hands, love them. <strong>PHP</strong>, <strong>MySQL</strong> and <strong>Spring</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row padding-card-2 pt-5">
+          <div class="col-md-6 col-12 pb-5" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+            <div class="aboutme-card">
+              <div class="media">
+                <img class="align-self-center ml-3 mr-5" width="40" height="40" src="images/reliability.png" alt="Reliability">
+                <div class="media-body">
+                  <h2 class="aboutme-h2 pb-3">Reliability</h2>
+                  <p class="aboutme-p">Always respect deadlines. I always <strong>bring all of me</strong> on every project.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12 pb-5 pt-md-5" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+            <div class="aboutme-card">
+              <div class="media">
+                <img class="align-self-center ml-3 mr-5" width="40" height="40" src="images/dynamic.png" alt="Dynamic">
+                <div class="media-body">
+                  <h2 class="aboutme-h2 pb-3">Dynamic</h2>
+                  <p class="aboutme-p">Constantly in contact with customers. I'm always <strong>Ready to help you</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!----------------------------CONTATTI--------------------------->
+        <div class="row padding-cta" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
+          <div class="col-12 pt-5">
+            <h2 class="cta-p text-center text-white">I want to make things that make a difference.</h2>
+            <a href="mailto:simonegatto23@gmail.com" class="last-cta cta mx-auto mt-3">Write me now</a>
+          </div>
+        </div>
+
+        <footer id="contacts" class="text-white text-center p-3" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
+          <hr>
+          <div class="contatti pt-5 padding-footer">
+            <a href="https://www.facebook.com/zsimo23/" title="Facebook" target=_blank><img width="30" height="30" src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/lemonwskiii" title="Instagram" target=_blank><img width="30" height="30" src="images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/simone-gatto23/" title="LinkedIn"><img width="30" height="30" src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/justsimo" title="GitHub" target=_blank><img width="30" height="30" src="images/github.png" alt="GitHub"></a>
+            <p class="m-3">Copyright © 2020 - Simone Gatto</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" class="up-arrow" href="#navbar"><img width="50" height="50" src="images/up.png" alt="Up Arrow"></a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
