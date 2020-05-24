@@ -89,7 +89,6 @@ footer a:hover{opacity: 0.5;}
 @media (max-width: 576px){ /*Tutti i più piccoli dall'iphone SE in giu*/
   .nav-display-brand{display: none;}
   .nav-cta{display: none;}
-  .navbar-brand h1{font-size: 22px; letter-spacing: 0.1em; padding-top: 15px;}
   .welcome{width:100%; height: 100%; padding-top: 10%; padding-bottom: 85%;}
   .welcome-qrcode{display: none;}
   .welcome-smile{text-align: center; font-size: 70px;}
@@ -97,8 +96,9 @@ footer a:hover{opacity: 0.5;}
   .welcome-second{display: none;}
   .welcome-third{display: none;}
   .welcome-cta{display: block;}
+  .welcome-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
   .loading-box{margin-top: 50%;}
-  .aboutme-card{width: 100%; padding: 10px;}
+  .aboutme-card{width: 90%; padding: 10px;}
   footer a{padding: 0 10px;}
   .up-arrow{display: none;}
   .curva{display: none;}
@@ -114,8 +114,9 @@ footer a:hover{opacity: 0.5;}
   .welcome-second{display: none;}
   .welcome-third{display: none;}
   .welcome-cta{display: block;}
+  .welcome-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
   .loading-box{margin-top: 50%;}
-  .aboutme-card{width: 100%; padding: 10px;}
+  .aboutme-card{width: 90%; padding: 10px;}
   .up-arrow{display: none;}
   .curva{display: none;}
 }
@@ -124,8 +125,8 @@ footer a:hover{opacity: 0.5;}
   .loading-box{margin-top: 50%;}
   .nav-display-brand{display: none;}
   .welcome{width:80%; height: 100%; padding-top: 10%; padding-bottom: 20%;}
-  .aboutme-card{width: 100%; padding: 10px;}
-  .navbar-brand h1{font-size: 24px; letter-spacing: 0.1em; padding-top: 15px;}
+  .aboutme-card{width: 90%; padding: 10px;}
+  .navbar-brand h1{font-size: 24px; padding-top: 15px;}
   .nav-item{display: inline; font-size: 20px; padding: 0 10px;}
   .up-arrow{display: none;}
   .curva{display: none;}
@@ -133,5 +134,5 @@ footer a:hover{opacity: 0.5;}
 
  @media (min-width: 1300px) and (max-width: 1400px){
    .welcome{width: 60%;}
-   .aboutme-card{width: 100%;}
+   .aboutme-card{width: 90%;}
  }
