@@ -1,0 +1,138 @@
+*{margin:0; padding: 0; box-sizing: border-box;}
+
+body{background: linear-gradient(163deg, #2278AD 0%, #2999B7 58%, #31BDC3 100%);}
+
+a{display: inline; color: #fff; text-decoration: none;}
+a:hover{text-decoration: none;}
+hr{border-color: white; opacity: 0.5;}
+h1{font-family: "Montserrat", sans-serif;}
+a, h2, h3, h4, p, li {font-family: "Selawik Light", sans-serif; color:#fff;}
+
+/*---------------SCROLLBAR-----------------*/
+#no-scrollbar{overflow-y: hidden;} /*Gestione scrollbar al loading con script*/
+
+/*Custom style scrollbar*/
+::-webkit-scrollbar {width: 10px; border-radiuds: .25rem;}
+::-webkit-scrollbar-track{background: #1A193A;}
+
+/*Handle*/
+::-webkit-scrollbar-thumb{background: white; border-radius: .25rem;}
+::-webkit-scrollbar-thumb:hover{background: rgb(255,255,255, 0.5);}
+
+/*-----------UP ARROW----------------*/
+.up-arrow{display: block; position: fixed; bottom: 30px; right: 30px;}
+
+/*------------LOADER------------------*/
+.loading-page {width: 100%; height: 100%; position:fixed; z-index: 10; left: 0; background: linear-gradient(163deg, #2278AD 0%, #2999B7 58%, #31BDC3 100%);}
+.loading-box{display: flex; align-items: center; flex-direction: column; margin-top: 15%;}
+.loading-box p{font-size: 30px;}
+
+/*---------------CTA-----------------------*/
+.cta{
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 200px;
+  letter-spacing: 0.08em;
+  font-size: 18px;
+}
+
+/*--------------NAVBAR-----------------*/
+.navbar{position: static; background: transparent;}
+.navbar-toggler{width: 47px; height: 34px;}
+.navbar-toggler .line{width: 100%; float: left; height: 2px; background-color: #fff; margin: 2px 0;}
+.navbar-dark .navbar-toggler {color: rgba(255,255,255,1); border-color: rgba(255,255,255,1);}
+.navbar-dark .navbar-nav .nav-link {color: rgba(255,255,255,0.5);}
+.navbar-dark .navbar-nav .nav-link {color: rgba(255,255,255,0.5);}
+.navbar-dark .navbar-nav .nav-link:hover {color: rgba(255,255,255,1);}
+.navbar-brand h1{font-size: 24px; padding-top: 15px;}
+.nav-display-brand{display: inline;}
+.nav-item{display: inline; font-size: 18px; padding: 0 10px;}
+.nav-item:last-of-type{padding-right: 0;}
+.active{font-weight: bold;}
+.nav-cta{width: 170px; font-size: 16px;}
+.nav-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
+
+/*---------------HERO--------------------*/
+.welcome{height: 100%; width: 50%; color: #FFF; padding-top: 5%; padding-bottom: 5%;} /*ricordate di modificare width a 100% su cellulare e tablet*/
+.welcome-smile{font-size: 100px;}
+.welcome-main{font-size: 32px; padding-bottom: 30px;}
+.welcome-second{font-size: 22px;}
+.welcome-qrcode{margin-right: 15px; float:left;}
+.welcome-third{font-size: 18px;}
+.welcome-cta{display: none;}
+
+/*----------------------ABOUT ME--------------------*/
+.aboutme-h2{text-align: left; font-size: 22px; font-weight: bold;}
+.aboutme-p{text-align: left; font-size: 18px;}
+.padding-card-1{padding-top: 15%;}
+.padding-card-2{padding-bottom: 15%;}
+.aboutme-card{display: block; overflow: hidden; background: rgb(255, 255, 255, 0.3); color: #FFF; padding: 40px; text-align: center; border: 1px solid #fff; border-radius: 5px; width: 80%;}
+
+/*------------------LAST CTA-------------------------*/
+.padding-cta{padding-top: 5%; padding-bottom: 15%;}
+.cta-p{font-size: 30px; font-weight: bold;}
+.last-cta{width: 60%;}
+.last-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
+
+/*----------------FOOTER------------------------*/
+footer a{padding: 0 15px;}
+footer a:hover{opacity: 0.5;}
+.padding-footer{padding-bottom: 5%;}
+
+/*------------------------BREAKPOINTS---------------*/
+@media (max-width: 576px){ /*Tutti i più piccoli dall'iphone SE in giu*/
+  .nav-display-brand{display: none;}
+  .nav-cta{display: none;}
+  .welcome{width:100%; height: 100%; padding-top: 10%; padding-bottom: 85%;}
+  .welcome-qrcode{display: none;}
+  .welcome-smile{text-align: center; font-size: 70px;}
+  .welcome-main{text-align: center; font-size: 24px;}
+  .welcome-second{display: none;}
+  .welcome-third{display: none;}
+  .welcome-cta{display: block;}
+  .welcome-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
+  .loading-box{margin-top: 50%;}
+  .aboutme-card{width: 100%; padding: 10px;}
+  footer a{padding: 0 10px;}
+  .up-arrow{display: none;}
+  .curva{display: none;}
+}
+
+@media (min-width: 577px) and (max-width: 991px) { /*Sopra iphone SE fino ai quasi tablet*/
+  .nav-display-brand{display: none;}
+  .nav-cta{display: none;}
+  .welcome{width:80%; height: 100%; padding-top: 10%; padding-bottom: 35%;}
+  .welcome-qrcode{display: none;}
+  .welcome-smile{text-align: center; font-size: 70px;}
+  .welcome-main{text-align: center; font-size: 24px;}
+  .welcome-second{display: none;}
+  .welcome-third{display: none;}
+  .welcome-cta{display: block;}
+  .welcome-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
+  .loading-box{margin-top: 50%;}
+  .aboutme-card{width: 80%; padding: 10px;}
+  .up-arrow{display: none;}
+  .curva{display: none;}
+}
+
+@media (min-width: 992px) and (max-width: 1112px) { /*iPad Pro*/
+  .loading-box{margin-top: 50%;}
+  .nav-display-brand{display: none;}
+  .welcome{width:80%; height: 100%; padding-top: 10%; padding-bottom: 20%;}
+  .aboutme-card{width: 80%; padding: 10px;}
+  .navbar-brand h1{font-size: 24px; padding-top: 15px;}
+  .nav-item{display: inline; font-size: 20px; padding: 0 10px;}
+  .up-arrow{display: none;}
+  .curva{display: none;}
+ }
+
+ @media (min-width: 1300px) and (max-width: 1400px){
+   .welcome{width: 60%;}
+   .aboutme-card{width: 80%;}
+ }
