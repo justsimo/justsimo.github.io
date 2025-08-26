@@ -113,6 +113,7 @@ footer a:hover{opacity: 0.5;}
 .timeline-content {
   padding: 5px 15px;
   background-color: #FFF;
+  font-color: #FFF;
   border-radius: 6px;
   opacity: 0.5;
 }
@@ -168,6 +169,7 @@ footer a:hover{opacity: 0.5;}
    .welcome{width: 60%;}
    .aboutme-card{width: 80%;}
  }
+
 
 
 
