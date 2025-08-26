@@ -98,8 +98,6 @@ footer a:hover{opacity: 0.5;}
 .timeline-item {
   position: relative;
   margin-bottom: 30px;
-  opacity: 0.5;
-  background-color: #FFF;
 }
 
 .timeline-item::before {
@@ -109,7 +107,6 @@ footer a:hover{opacity: 0.5;}
   top: 0;
   width: 20px;
   height: 20px;
-  background-color: #FFF;
   border-radius: 50%; /* cerchio */
 }
 
@@ -117,6 +114,8 @@ footer a:hover{opacity: 0.5;}
   padding: 5px 15px;
   color: #FFF;
   border-radius: 6px;
+  background-color: #FFF;
+  opacity: 0.5;
 }
 
 /*------------------------BREAKPOINTS---------------*/
@@ -170,6 +169,7 @@ footer a:hover{opacity: 0.5;}
    .welcome{width: 60%;}
    .aboutme-card{width: 80%;}
  }
+
 
 
 
