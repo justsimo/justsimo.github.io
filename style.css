@@ -87,6 +87,7 @@ footer a{padding: 0 15px;}
 footer a:hover{opacity: 0.5;}
 .padding-footer{padding-bottom: 5%;}
 
+/*----------------TIMELINE------------------------*/
 .timeline {
   position: relative;
   margin: 50px 0;
@@ -169,6 +170,7 @@ footer a:hover{opacity: 0.5;}
    .welcome{width: 60%;}
    .aboutme-card{width: 80%;}
  }
+
 
 
 
