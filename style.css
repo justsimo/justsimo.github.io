@@ -59,7 +59,7 @@ a, h2, h3, h4, p, li {font-family: "Selawik Light", sans-serif; color:#fff;}
 .nav-cta:hover{color:  #fff; background: rgb(255, 255, 255, 0.3);}
 
 /*---------------HERO--------------------*/
-.welcome{height: 100%; width: 50%; color: #FFF; padding-top: 5%; padding-bottom: 5%;} /*ricordate di modificare width a 100% su cellulare e tablet*/
+.welcome{height: 100%; width: 50%; color: #FFF; padding-top: 3%; padding-bottom: 5%;} /*ricordate di modificare width a 100% su cellulare e tablet*/
 .welcome-smile{font-size: 100px;}
 .welcome-main{font-size: 32px; padding-bottom: 30px;}
 .welcome-second{font-size: 22px;}
@@ -138,3 +138,4 @@ footer a:hover{opacity: 0.5;}
    .welcome{width: 60%;}
    .aboutme-card{width: 80%;}
  }
+
