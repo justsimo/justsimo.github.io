@@ -98,6 +98,8 @@ footer a:hover{opacity: 0.5;}
 .timeline-item {
   position: relative;
   margin-bottom: 30px;
+  opacity: 0.5;
+  background-color: #FFF;
 }
 
 .timeline-item::before {
@@ -113,9 +115,8 @@ footer a:hover{opacity: 0.5;}
 
 .timeline-content {
   padding: 5px 15px;
-  background-color: #FFF;
+  color: #FFF;
   border-radius: 6px;
-  opacity: 0.5;
 }
 
 /*------------------------BREAKPOINTS---------------*/
@@ -169,6 +170,7 @@ footer a:hover{opacity: 0.5;}
    .welcome{width: 60%;}
    .aboutme-card{width: 80%;}
  }
+
 
 
 
