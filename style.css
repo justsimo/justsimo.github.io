@@ -60,7 +60,7 @@ a, h2, h3, h4, p, li {font-family: "Selawik Light", sans-serif; color:#fff;}
 
 /*---------------HERO--------------------*/
 .welcome{height: 100%; width: 50%; color: #FFF; padding-top: 5%; padding-bottom: 5%;} /*ricordate di modificare width a 100% su cellulare e tablet*/
-.welcome-smile{font-size: 80px;}
+.welcome-smile{font-size: 10px;}
 .welcome-main{font-size: 32px; padding-bottom: 30px;}
 .welcome-second{font-size: 22px;}
 .welcome-qrcode{margin-right: 15px; float:left;}
@@ -138,6 +138,7 @@ footer a:hover{opacity: 0.5;}
    .welcome{width: 60%;}
    .aboutme-card{width: 80%;}
  }
+
 
 
 
