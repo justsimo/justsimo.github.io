@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Simone Gatto - Portfolio/CV</title>
+    <meta name="author" content="Simone Gatto"/>
+    <meta name="description" content="I build AI & web solutions that make a difference: Machine Learning, Computer Vision, Data Mining, and full-stack projects."/>
+    <meta name="keywords" content="html, css, javascript, php, mysql, fullstack, frontend, backend, python, ai, machine learning"/>
+    <meta name="theme-color" content="#0D1117"/>
+
+    <link type="image/x-icon" rel="icon" href="images/favicon.ico"/>
+
+    <!-- CSS order: normalize → framework → libs → local fonts → app styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet" href="fonts/fonts.css"/>
+    <link rel="stylesheet" href="style.css?v=105"/>
+  </head>
+
+  <body id="no-scrollbar">
+    <!-- LOADER -->
+    <div class="container-fluid">
+      <div class="loading-page" aria-busy="true" aria-live="polite">
+        <div class="loading-box" role="alert" aria-label="Loading site configuration">
+          <div class="spinner" aria-hidden="true"></div>
+          <p class="loading-text">Configuration</p>
+          <p class="loading-text flicker"><span id="count" aria-live="polite">0</span>% Completed</p>
+          <p class="loading-text">Don't close the site</p>
+          <div class="progress-container" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+      <nav id="navbar" class="navbar navbar-expand-lg" role="navigation" aria-label="Primary">
+        <!-- AOS: entrance without long delays -->
+        <div class="nav-brand-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+          <a class="navbar-brand" href="index.html">
+            <h1 class="navbar-brand-h1">🚀 Simone Gatto</h1>
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="line"></span><span class="line"></span><span class="line"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText" data-aos="fade-left" data-aos-anchor-placement="top-bottom">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home" aria-current="page">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aboutme">About me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#career">Career</a></li>
+            <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+          </ul>
+          <a href="mailto:simonegatto.dev@gmail.com" class="cta nav-cta">Write me</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-content" role="main">
+      <!-- HERO -->
+      <section id="home" class="section row" aria-labelledby="home-title">
+        <h2 id="home-title" class="sr-only">Home</h2>
+        <div class="col-12">
+          <section class="welcome mx-auto my-auto intro-text">
+            <p data-aos="zoom-out-down" data-aos-anchor-placement="top-bottom" class="welcome-smile">:)</p>
+
+            <p data-aos="zoom-out-right" data-aos-anchor-placement="top-bottom" class="welcome-main">
+              Hello, your PC ran into my personal website<br/>
+              I’m <span class="accent"><strong>Simone, a Computer Engineer specialized in AI &amp; ML</strong></span>, I love building solutions that make a real impact
+            </p>
+
+            <!-- QR + texts -->
+            <div class="welcome-meta" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <img class="welcome-qrcode" src="images/qr-code.svg" width="100" height="100"
+                   alt="QR code — scan with your camera" loading="lazy"/>
+
+              <div class="welcome-texts">
+                <p class="welcome-second">For more information <strong>go to the next section</strong></p>
+                <p class="welcome-third">Take the next step: <strong>SCAN_IT</strong></p>
+              </div>
+            </div>
+
+            <a href="#contacts" class="cta welcome-cta mx-auto mt-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Get in touch</a>
+          </section>
+        </div>
+      </section>
+
+      <!-- ABOUT ME -->
+      <section class="container section section--loose" id="aboutme" aria-labelledby="about-title">
+        <h2 id="about-title" class="section-title sr-only">About me</h2>
+        <section class="intro-highlight" data-aos="zoom-out-down" data-aos-anchor-placement="top-bottom">
+          <div class="intro-inner">
+            <div class="intro-text" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+              <h2>Something <span class="accent">About Me</span></h2>
+              <p class="lead"><strong>Curious</strong> and <strong>People-oriented</strong>, passionate about <strong>AI</strong> and <strong>Data</strong>.<br>
+                I enjoy exploring how <strong>Machine Learning</strong>, <strong>Data Science</strong> and <strong>analytics</strong> can solve real problems, always combining <strong>technical skills</strong> with a <strong>collaborative</strong> and <strong>open-minded</strong> approach.</p>
+              <p class="mini">Recent projects: <strong>xG shot prediction</strong>, <strong>YOLOv9 segmentation</strong> on <strong>TTPLA</strong>, leader election with <strong>ZooKeeper & Docker</strong>, <strong>COP26/27 Twitter sentiment analysis</strong>, and interpreting transformers on exact arithmetic (<strong>GCD</strong>).<br>
+                Also: <strong>UniCal Tutor</strong> &amp; <strong>Students’ Representative</strong>, <strong>Digital Civil Service volunteer</strong></p>
+
+              <div class="divider" aria-hidden="true"></div>
+
+              <!-- Soft Skills -->
+              <h3 class="section-subtitle">Soft skills</h3>
+              <ul class="soft-skills list-plain" aria-label="soft skills" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <li class="skill-badge">Proactivity</li>
+                <li class="skill-badge">Flexibility</li>
+                <li class="skill-badge">Leadership</li>
+                <li class="skill-badge">Teamwork</li>
+                <li class="skill-badge">People Oriented</li>
+                <li class="skill-badge">Problem Solving</li>
+              </ul>
+
+              <div class="divider" aria-hidden="true"></div>
+
+              <!-- Certifications -->
+              <h3 class="section-subtitle">Certifications</h3>
+              <ul class="certifications list-plain" data-aos="fade-up" data-aos-anchor-placement="top-bottom" aria-label="certifications">
+                <li class="cert-badge">📜 ECDL Full Standard + IT Security</li>
+                <li class="cert-badge">🌐 Cisco IT Essentials</li>
+                <li class="cert-badge">🇮🇹 Native</li>
+                <li class="cert-badge">🇬🇧 B2</li>
+                <li class="cert-badge">🇪🇸 A2</li>
+              </ul>
+
+              <div class="divider" aria-hidden="true"></div>
+
+              <!-- CTAs -->
+              <div class="cta-row" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+                <a class="btn modern" href="mailto:simonegatto.dev@gmail.com">📩 Contact Me</a>
+                <a class="btn modern" href="https://www.linkedin.com/in/simone-gatto23/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+                <a class="btn modern ghost" href="https://drive.google.com/file/d/12i8rPkmrNBM15NQwpPg57q6-maxlOZp9/view?usp=sharing" target="_blank" rel="noopener">📄 Download CV</a>
+              </div>
+            </div>
+
+            <!-- Avatar -->
+            <figure class="intro-avatar-wrapper" data-aos="fade-left" data-aos-anchor-placement="top-bottom">
+              <img src="images/avatar.png" alt="Portrait of Simone Gatto" class="intro-avatar" loading="lazy"/>
+              <div class="avatar-ring" aria-hidden="true"></div>
+            </figure>
+          </div>
+        </section>
+
+        <!-- FUN FACTS -->
+        <section class="fun-facts" id="fun-facts" aria-labelledby="facts-title">
+          <div class="facts-grid">
+            <div class="fact" data-aos="zoom-out-down" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
+              <div class="fact-icon" aria-hidden="true">🎓</div>
+              <div class="fact-text">
+                <h3 class="fact-title">AI &amp; ML</h3>
+                <p class="fact-desc u-justify">MSc candidate in Computer Engineering — <strong>AI &amp; ML</strong> at <strong>UniCal</strong>.<br>
+                  Thesis: <strong>Machine Unlearning</strong></p>
+              </div>
+            </div>
+
+            <div class="fact" data-aos="zoom-out-down" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+              <div class="fact-icon" aria-hidden="true">⚽</div>
+              <div class="fact-text">
+                <h3 class="fact-title">Passion</h3>
+                <p class="fact-desc u-justify"><strong>Travel</strong>, <strong>Soccer</strong>, <strong>gaming</strong> and <strong>meeting new people</strong>.<br>
+                  I also build <strong>communities</strong> — organized <strong>Red Bull–backed esports events</strong>.</p>
+              </div>
+            </div>
+
+            <div class="fact" data-aos="zoom-out-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+              <div class="fact-icon" aria-hidden="true">💼</div>
+              <div class="fact-text">
+                <h3 class="fact-title">Looking for</h3>
+                <p class="fact-desc u-justify">Opportunities in <strong>AI</strong>, <strong>Machine Learning</strong>, <strong>Data Science</strong>, <strong>Data Analytics</strong>, <strong>Data Engineering</strong> — fields I’m passionate about and work on every day</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- PORTFOLIO / PROJECTS -->
+      <section id="portfolio" class="projects-section section section--loose" aria-labelledby="projects-title">
+        <div class="container-1100">
+          <div class="row">
+            <div class="col-12 padding-title">
+              <h2 id="projects-title" class="text-center aboutme-title" data-aos="fade-left" data-aos-anchor-placement="top-bottom">Projects</h2>
+            </div>
+          </div>
+
+          <div class="projects">
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="320">
+              <header class="project-content"><h3>📊 Data Science</h3></header>
+              <p class="u-justify"><strong>Data Mining project</strong> on <strong>Expected Goals (xG)</strong> for shots from the <strong>Top-5 European leagues 2017/2018</strong>.
+                I performed <strong>geometric feature engineering</strong> to compute <strong>shot distance</strong> and <strong>angle</strong> from pitch coordinates and analyzed their relationship with <strong>xG</strong>.
+                Beyond <strong>xG regression</strong>, I implemented a <strong>three-class shot outcome classifier</strong>: <strong>Non Goal (0)</strong>, <strong>Goal (1)</strong>, <strong>On Target (2)</strong>; best results came from <strong>Voting</strong>, <strong>Grid-MLP</strong>, <strong>Grid XGBoost</strong>, and <strong>Grid Random Forest</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Data Cleaning & Preprocessing</li>
+                <li>🛠️ Feature Engineering</li>
+                <li>🛠️ Multiclass Classification</li>
+                <li>🛠️ Predictive Modeling</li>
+                <li>🛠️ Pandas</li>
+                <li>🛠️ Matplotlib</li>
+                <li>🛠️ Numpy</li>
+                <li>🛠️ Seaborn</li>
+                <li>🛠️ Scikit-learn</li>
+                <li>🛠️ SVM</li>
+                <li>🛠️ Random Forest</li>
+                <li>🛠️ XGBoost</li>
+                <li>🛠️ MLP</li>
+                <li>🛠️ Grid Search</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="640">
+              <header class="project-content"><h3>👥 Social Network and Media Analysis</h3></header>
+              <p class="u-justify"><strong>Twitter sentiment analysis</strong> for <strong>COP26/27</strong> using two methods: <strong>VADER</strong> (lexicon, rule-based) and a transformer model <strong>Twitter-RoBERTa</strong>.
+                The pipeline includes <strong>dataset harmonization</strong>, <strong>text cleaning</strong> (<strong>URL/prefix/suffix removal</strong>, <strong>emoji normalization</strong>), <strong>hashtag extraction</strong>, <strong>user geolocation parsing</strong>, and <strong>time-series analysis</strong>.
+                We compare <strong>model outputs</strong> (trends, distributions) and build <strong>word clouds</strong> for semantic insight; <strong>Linear Regression</strong> and <strong>Decision Tree Regressor</strong> are used to interpret <strong>neg/neu/pos sentiment components</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Text Preprocessing</li>
+                <li>🛠️ Feature Engineering</li>
+                <li>🛠️ NLP</li>
+                <li>🛠️ Sentiment Analysis</li>
+                <li>🛠️ HuggingFace</li>
+                <li>🛠️ Transformers</li>
+                <li>🛠️ VADER</li>
+                <li>🛠️ roBERTa</li>
+                <li>🛠️ Pandas</li>
+                <li>🛠️ Numpy</li>
+                <li>🛠️ Matplotlib</li>
+                <li>🛠️ Scikit-learn</li>
+                <li>🛠️ spaCy/NLTK</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="560">
+              <header class="project-content"><h3>👁️‍🗨️ Computer Vision</h3></header>
+              <p class="u-justify"><strong>Instance detection and segmentation</strong> of <strong>power cables</strong> and <strong>towers</strong> from <strong>aerial imagery</strong> using <strong>YOLOv9-e</strong> on the <strong>TTPLA dataset</strong>.
+                The pipeline includes <strong>pre-processing</strong> and <strong>augmentation</strong> (<strong>resize</strong>, <strong>flips</strong>, <strong>crops</strong>, <strong>rotations</strong>, <strong>shear</strong>), <strong>training on Kaggle</strong>, and <strong>Optuna hyperparameter tuning</strong> targeting <strong>mAP50</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Object Detection</li>
+                <li>🛠️ Instance Segmentation</li>
+                <li>🛠️ PyTorch</li>
+                <li>🛠️ YOLOv9-e</li>
+                <li>🛠️ Roboflow</li>
+                <li>🛠️ Dataset Management</li>
+                <li>🛠️ Annotation Pipelines</li>
+                <li>🛠️ Data Preprocessing</li>
+                <li>🛠️ Data Augmentation</li>
+                <li>🛠️ Model Evaluation</li>
+                <li>🛠️ Hyperparameter Optimization</li>
+              </ul>
+            </article>
+
+            
+
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="720">
+              <header class="project-content"><h3>🤖 Machine Learning & Deep Learning</h3></header>
+              <p class="u-justify"><strong>Research project</strong> on using <strong>transformers</strong> to compute the <strong>Greatest Common Divisor (GCD)</strong> as a <strong>supervised translation task</strong>: <strong>integer pairs</strong> are <strong>tokenized</strong> in <strong>base B</strong> and the model outputs the <strong>GCD</strong>.
+                We analyze how <strong>encoding base</strong> and <strong>training distributions</strong> (<strong>uniform</strong>, <strong>log-uniform</strong>, etc.) impact <strong>accuracy</strong>, <strong>count of correct GCD ≤100</strong>, and <strong>grokking</strong>, evaluating on both <strong>natural</strong> and <strong>stratified test sets</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Transformers for Algorithmic Tasks</li>
+                <li>🛠️ Grokking Analysis</li>
+                <li>🛠️ Synthetic Data & Sampling</li>
+                <li>🛠️ Training-Distribution Design</li>
+                <li>🛠️ Explainability by Probing</li>
+                <li>🛠️ Evaluation Protocols & Metrics</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+              <header class="project-content"><h3>☁ Distributed Systems and Cloud Computing</h3></header>
+              <p class="u-justify">Implementation of a <strong>distributed coordinator</strong> with <strong>leader election</strong> using <strong>Apache ZooKeeper</strong>.
+                <strong>Java clients</strong> create <strong>ephemeral sequential znodes</strong> under <strong>/election</strong> and use <strong>watchers</strong> on their predecessor to detect failures and trigger <strong>re-election</strong>.
+                The system is <strong>containerized with Docker</strong> and orchestrated via <strong>Docker Compose</strong> to spin up <strong>ZooKeeper</strong> and multiple clients and run <strong>controlled crash tests</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Distributed Systems</li>
+                <li>🛠️ Apache ZooKeeper &  Java API</li>
+                <li>🛠️ Docker</li>
+                <li>🛠️ Docker Compose</li>
+                <li>🛠️ Linux CLI</li>
+                <li>🛠️ Testing</li>
+                <li>🛠️ High-Availability Design</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="480">
+              <header class="project-content"><h3>💻 Information Systems</h3></header>
+              <p class="u-justify">Design of <strong>YourBestWinery</strong>, an <strong>information system</strong> for selling <strong>certified wines</strong> across <strong>B2C</strong> and <strong>B2B flows</strong> (retail buyers and bulk purchasers), modeled with <strong>GOREM</strong> (stakeholders, soft-goals, use cases, dependencies).
+                <strong>“Purchase” microservice</strong> (<strong>checkout</strong>, <strong>orders</strong>, <strong>payments</strong>) using <strong>Spring (Controller/Service)</strong>, <strong>REST APIs</strong>, <strong>OAuth2/Keycloak</strong>, and a <strong>SCRUM/Gantt delivery plan</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Requirements Engineering</li>
+                <li>🛠️ Goal Modeling (GOREM)</li>
+                <li>🛠️ Analytics & Module Integration</li>
+                <li>🛠️ Agile Delivery (SCRUM)</li>
+                <li>🛠️ Project Planning (Gantt)</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="160">
+              <header class="project-content"><h3>🌐 Web Application Platforms</h3></header>
+              <p class="u-justify">Development of an <strong>online reservation system</strong> for a <strong>beach resort</strong>.
+                The app provides <strong>user registration/login</strong>, <strong>inventory &amp; availability management</strong> for <strong>umbrellas/services</strong>, <strong>CRUD for bookings</strong>, and a <strong>user dashboard</strong> with <strong>history/summary</strong>.
+                Front end built with <strong>JSF/PrimeFaces</strong>; <strong>EJB</strong> for <strong>business logic</strong>; <strong>Hibernate/JPA</strong> for <strong>persistence</strong> (entity–relationship mapping, transactions, constraints).
+                Deployed on <strong>JBoss/WildFly</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Java EE (EJB, Servlets, JSF)</li>
+                <li>🛠️ PrimeFaces UI</li>
+                <li>🛠️ Hibernate ORM</li>
+                <li>🛠️ Input Validation</li>
+                <li>🛠️ Error Handling</li>
+                <li>🛠️ Authentication Management</li>
+                <li>🛠️ Session Management</li>
+                <li>🛠️ MVC Architecture</li>
+                <li>🛠️ Application Server Deployment</li>
+              </ul>
+            </article>
+
+            <!-- 4 -->
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="240">
+              <header class="project-content"><h3>💻 Computer Architecture and Programming Systems</h3></header>
+              <p class="u-justify">Implementation of the <strong>Fish School Search (FSS)</strong> <strong>metaheuristic</strong> (with <strong>individual, instinctive, volitive phases</strong>) for <strong>optimization</strong>, with the numeric core written in <strong>x86 Assembly</strong> and <strong>C</strong>.
+                Two execution paths were built: <strong>32-bit with SSE</strong> and <strong>64-bit with AVX</strong>, applying <strong>SIMD vectorization</strong> (e.g., <strong>SUBS</strong>, <strong>MULPS</strong>, <strong>HADDPS</strong>, <strong>SHUF</strong>), <strong>loop unrolling</strong>, and <strong>cache-friendly row-major memory access</strong>.
+                <strong>OpenMP</strong> provides <strong>multi-threaded parallelism</strong>. Critical kernels were ported to <strong>Assembly</strong> and integrated with the <strong>C FSS functions</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Computer Architecture Concepts</li>
+                <li>🛠️ SIMD Vectorization</li>
+                <li>🛠️ x86 Assembly 32-bit/64-bit</li>
+                <li>🛠️ Low-Level Optimization</li>
+                <li>🛠️ OpenMP</li>
+                <li>🛠️ C programming</li>
+                <li>🛠️ Low-level integration</li>
+                <li>🛠️ Interaction: Hardware-level code and Higher-level C routines</li>
+              </ul>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
+              <header class="project-content"><h3>📘 Foundations of Computer Science</h3></header>
+              <p class="u-justify">Development of an <strong>Italian Tax Code (Codice Fiscale) calculator</strong> in <strong>Java Swing</strong>.
+                The app collects <strong>first/last name</strong>, <strong>gender</strong>, <strong>date and place of birth</strong> (city + province), applies the official rules (<strong>consonant/vowel extraction</strong>, <strong>month letter mapping</strong>, <strong>+40 to day for females</strong>), looks up the <strong>municipality code</strong> from a file, and computes the <strong>check character</strong> using <strong>odd/even position tables</strong>.
+                Event-driven UI with <strong>JRadioButton</strong>, <strong>JComboBox</strong>, <strong>DocumentListener</strong>, plus <strong>input validation</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Java</li>
+                <li>🛠️ Java Swing UI</li>
+                <li>🛠️ Event-Driven Programming</li>
+                <li>🛠️ File I/O & Lookup</li>
+                <li>🛠️ String Manipulation</li>
+                <li>🛠️ Input Validation</li>
+                <li>🛠️ Error Handling</li>
+                <li>🛠️ OOP Design</li>
+              </ul>
+            </article>
+
+            <!-- 2 -->
+            <article class="project-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="80">
+              <header class="project-content"><h3>💾 Information Systems Laboratory</h3></header>
+              <p class="u-justify">Design of an <strong>integrated information system</strong> for a <strong>winery</strong>, covering <strong>business-process analysis</strong> (actors/archives, <strong>DFDs</strong>), <strong>ER → relational data modeling</strong>, <strong>business logic</strong>, and <strong>UI modeling</strong>.
+                Implemented features include <strong>e-commerce with user area</strong>, <strong>personalized offers</strong>, <strong>back-in-stock notifications</strong> and <strong>price-trend charts</strong>; <strong>Wine Card/loyalty</strong>, <strong>event/tour booking</strong>; <strong>warehouse management</strong> with <strong>end-to-end product tracking</strong> (harvest → fermentation → bottling → sales); <strong>delivery integration</strong> and <strong>order tracking</strong>; plus <strong>database triggers</strong> and <strong>XML export</strong> for <strong>system interoperability</strong>.</p>
+              <ul class="subtitle-blocks list-plain">
+                <li>🛠️ Requirements Analysis & Modeling (Use case, DFD, ER diagrams)</li>
+                <li>🛠️ Data Modelling</li>
+                <li>🛠️ SQL</li>
+                <li>🛠️ Triggers</li>
+                <li>🛠️ XML</li>
+                <li>🛠️ Business Logic Implementation</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section id="techstack" class="skills-section section section--loose" aria-labelledby="tech-title" data-aos="fade-left" data-aos-anchor-placement="top-bottom">
+        <div class="row">
+          <div class="col-12 padding-title">
+            <h2 id="tech-title" class="text-center aboutme-title">Tech Stack</h2>
+          </div>
+        </div>
+
+        <div class="container-inner" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div class="stack-grid">
+            <!-- AI / ML: full width -->
+            <section class="stack-category stack-category--wide" aria-labelledby="cat-ml">
+              <h3 id="cat-ml" class="stack-title">AI / ML</h3>
+
+              <h4 class="stack-subtitle">Libraries</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Pandas</li>
+                <li class="skill-tag">NumPy</li>
+                <li class="skill-tag">Matplotlib</li>
+                <li class="skill-tag">Seaborn</li>
+                <li class="skill-tag">Scikit-learn</li>
+                <li class="skill-tag">spaCy</li>
+                <li class="skill-tag">NLTK</li>
+                <li class="skill-tag">Hugging Face</li>
+                <li class="skill-tag">PyTorch</li>
+              </ul>
+
+              <h4 class="stack-subtitle">Classification Algorithms</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Random Forest</li>
+                <li class="skill-tag">Decision Tree</li>
+                <li class="skill-tag">XGBoost</li>
+                <li class="skill-tag">SVM</li>
+                <li class="skill-tag">Naive Bayes</li>
+                <li class="skill-tag">MLP</li>
+                <li class="skill-tag">Gradient Boosting</li>
+              </ul>
+
+              <h4 class="stack-subtitle">Regression Algorithms</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Linear</li>
+                <li class="skill-tag">Logistic</li>
+                <li class="skill-tag">Polynomial</li>
+              </ul>
+
+              <h4 class="stack-subtitle">Computer Vision</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">YOLO</li>
+                <li class="skill-tag">Optuna</li>
+                <li class="skill-tag">Roboflow</li>
+              </ul>
+
+              <h4 class="stack-subtitle">Notebooks Platforms</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Jupyter</li>
+                <li class="skill-tag">Colab</li>
+                <li class="skill-tag">Kaggle</li>
+              </ul>
+            </section>
+
+            <!-- 1) Programming Languages -->
+            <section class="stack-category" aria-labelledby="cat-langs">
+              <h3 id="cat-langs" class="stack-title">Programming Languages</h3>
+              <h4 class="stack-subtitle">Core</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Python</li>
+                <li class="skill-tag">Java</li>
+                <li class="skill-tag">JavaScript</li>
+                <li class="skill-tag">PHP</li>
+              </ul>
+              <h4 class="stack-subtitle">Systems & scripting</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">C</li>
+                <li class="skill-tag">C++</li>
+                <li class="skill-tag">Bash</li>
+                <li class="skill-tag">Assembly</li>
+              </ul>
+              <h4 class="stack-subtitle">Markup & style</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">HTML</li>
+                <li class="skill-tag">CSS</li>
+              </ul>
+            </section>
+
+            <!-- 2) Web (Frontend & CMS) -->
+            <section class="stack-category" aria-labelledby="cat-web">
+              <h3 id="cat-web" class="stack-title">Web (Frontend & CMS)</h3>
+              <h4 class="stack-subtitle">Frameworks & UI</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Bootstrap</li>
+                <li class="skill-tag">jQuery</li>
+              </ul>
+              <h4 class="stack-subtitle">CMS</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">WordPress</li>
+              </ul>
+            </section>
+
+            <!-- 3) Backend & APIs -->
+            <section class="stack-category" aria-labelledby="cat-back">
+              <h3 id="cat-back" class="stack-title">Backend & APIs</h3>
+              <h4 class="stack-subtitle">Java ecosystem</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Spring</li>
+                <li class="skill-tag">Java EE</li>
+              </ul>
+              <h4 class="stack-subtitle">Coordination</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Apache ZooKeeper</li>
+              </ul>
+            </section>
+
+            <!-- 4) Databases & Modelling -->
+            <section class="stack-category" aria-labelledby="cat-db">
+              <h3 id="cat-db" class="stack-title">Databases & Modelling</h3>
+              <h4 class="stack-subtitle">Modelling</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Use Case</li>
+                <li class="skill-tag">UML</li>
+                <li class="skill-tag">DFD</li>
+                <li class="skill-tag">ER</li>
+              </ul>
+              <h4 class="stack-subtitle">Relational</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">SQL</li>
+                <li class="skill-tag">MySQL</li>
+                <li class="skill-tag">Triggers</li>
+                <li class="skill-tag">XML</li>
+              </ul>
+            </section>
+
+            <!-- 5) DevOps & Versioning -->
+            <section class="stack-category" aria-labelledby="cat-devops">
+              <h3 id="cat-devops" class="stack-title">DevOps & Versioning</h3>
+              <h4 class="stack-subtitle">Containers & VCS</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Docker</li>
+                <li class="skill-tag">Docker Compose</li>
+                <li class="skill-tag">GitHub</li>
+              </ul>
+            </section>
+
+            <!-- 6) Platforms & Office -->
+            <section class="stack-category" aria-labelledby="cat-platforms">
+              <h3 id="cat-platforms" class="stack-title">Platforms & Office</h3>
+              <h4 class="stack-subtitle">Operating systems</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Linux Distros</li>
+                <li class="skill-tag">Windows</li>
+                <li class="skill-tag">macOS</li>
+                <li class="skill-tag">Android</li>
+              </ul>
+              <h4 class="stack-subtitle">MS Office (Advanced)</h4>
+              <ul class="stack-tags list-plain">
+                <li class="skill-tag">Word</li>
+                <li class="skill-tag">Excel</li>
+                <li class="skill-tag">PowerPoint</li>
+                <li class="skill-tag">Access</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAREER — TIMELINE: EDUCATION -->
+      <section id="career" class="timeline-section section" aria-labelledby="edu-title">
+        <div class="container-1100">
+          <div class="timeline-separator"><h2 id="edu-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Education</h2></div>
+          <ol class="timeline">
+            <li class="timeline-item left" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+              <article class="timeline-content">
+                <h3>👨🏻‍🎓💻 Master's Degree</h3>
+                <div class="subtitle-blocks">
+                  <span>📕 Computer Engineering: Artificial Intelligence &amp; Machine Learning</span>
+                  <span>📍 University of Calabria</span>
+                  <span>🗓️ <time datetime="2021-09">09/2021</time> - <time datetime="2025-12">12/2025</time></span>
+                </div>
+              </article>
+            </li>
+            
+            <li class="timeline-item right" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
+              <article class="timeline-content">
+                <h3>👨🏻‍🎓💻 Bachelor's Degree</h3>
+                <div class="subtitle-blocks">
+                  <span>📕 Computer Engineering</span>
+                  <span>📍 University of Calabria</span>
+                  <span>🗓️ <time datetime="2016-09">09/2016</time> - <time datetime="2021-04">04/2021</time></span>
+                </div>
+                <p><strong>Thesis:</strong> Developing a virtual environmental sensor for speech recognition: A case study based on Node-Red</p>
+              </article>
+            </li>
+
+            <li class="timeline-item left" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+              <article class="timeline-content">
+                <h3>👨🏻‍💻 Technical Diploma</h3>
+                <div class="subtitle-blocks">
+                  <span>📕 Full Stack Development</span>
+                  <span>📍 Start2Impact</span>
+                  <span>🗓️ <time datetime="2020-05">05/2020</time> - <time datetime="2021-05">05/2021</time></span>
+                </div>
+                <p>HTML, CSS, Javascript, Wordpress, PHP, MySQL</p>
+              </article>
+            </li>
+
+            <li class="timeline-item right" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+              <article class="timeline-content">
+                <h3>🇬🇧 English Certification (B2 with Merit)</h3>
+                <div class="subtitle-blocks">
+                  <span>📕 GESE Grade 7 - Trinity College London</span>
+                  <span>📍 Alpha College Dublin</span>
+                  <span>🗓️ <time datetime="2014-09">09/2014</time></span>
+                </div>
+                <p>3 weeks in Dublin, Ireland thanks to the project: "Learning English in Dublin"</p>
+              </article>
+            </li>
+
+            <li class="timeline-item left" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
+              <article class="timeline-content">
+                <h3>📚 High School Diploma</h3>
+                <div class="subtitle-blocks">
+                  <span>📕 IT Technician</span>
+                  <span>📍 ITT G. Malafarina</span>
+                  <span>🗓️ <time datetime="2011-09">09/2011</time> - <time datetime="2016-07">07/2016</time></span>
+                </div>
+                <p>Assembly, Pascal, C, C++, Java, Javascript, SQL, MySQL, PHP, HTML, CSS</p>
+                <p>Network setup and installation (Wireshark, Cisco Packet Tracer)</p>
+                <p>ECDL Full Standard + IT-Security</p>
+                <p>Cisco IT Essentials</p>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- TIMELINE: EXPERIENCE -->
+      <section id="experience" class="timeline-section section" aria-labelledby="exp-title">
+        <div class="container-1100">
+          <div class="timeline-separator"><h2 id="exp-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Work Experience</h2></div>
+          <ol class="timeline">
+            <li class="timeline-item right" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
+              <article class="timeline-content">
+                <h3>👨🏻‍💻 Web Developer</h3>
+                <div class="subtitle-blocks">
+                  <span>📕 Wordpress</span>
+                  <span>📍 Fisima</span>
+                  <span>💼 Stage</span>
+                  <span>🗓️ <time datetime="2021-02">02/2021</time> - <time datetime="2021-07">07/2021</time></span>
+                </div>
+                <p>Development of simple websites, landing pages, and eCommerce platforms (WooCommerce)</p>
+              </article>
+            </li>
+
+            <li class="timeline-item left" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+              <article class="timeline-content">
+                <h3>🫂 Volunteer Operator</h3>
+                <div class="subtitle-blocks">
+                  <span>📍 Department of Digital Transformation</span>
+                  <span>💼 Digital Civil Service</span>
+                  <span>🗓️ <time datetime="2022-12">12/2022</time> - <time datetime="2023-12">12/2023</time></span>
+                </div>
+                <p>"Cohesion and Digital Inclusion Helpdesk"</p>
+              </article>
+            </li>
+
+            <li class="timeline-item right" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+              <article class="timeline-content">
+                <h3>🎓 Educational Service and Orientation Area</h3>
+                <div class="subtitle-blocks">
+                  <span>📍 University of Calabria</span>
+                  <span>💼 Tutor</span>
+                  <span>🗓️ <time datetime="2023-06">06/2023</time> - <time datetime="2024-06">06/2024</time></span>
+                </div>
+                <p>Supported students’ integration into university life, providing guidance on academic procedures and services throughout their studies.</p>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ADDITIONAL EXPERIENCE -->
+      <section class="container section section--loose" id="activities" aria-labelledby="activities-title">
+        <div class="container-1100">
+          <div class="row">
+            <div class="col-12 padding-title">
+              <h2 id="activities-title" class="text-center aboutme-title" data-aos="fade-left" data-aos-anchor-placement="top-bottom">Additional Experiences</h2>
+            </div>
+          </div>
+
+          <div class="row padding-card-1">
+            <div class="col-md-6 col-12 pb-5 d-flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
+              <article class="aboutme-card-modern mx-auto w-100 h-100">
+                <div class="card-icon" aria-hidden="true">👨🏻‍💼</div>
+                <h3 class="aboutme-h3">Students’ Representative</h3>
+                <p class="aboutme-p u-justify"><strong>Elected Student Representative at the DIMES Department</strong> (Department of Computer Engineering, Modelling, Electronics and Systems) at University of Calabria acting as liaison between students and academic boards, fostering problem-solving on educational matters and improvement of student services.</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-12 pb-5 d-flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="120">
+              <article class="aboutme-card-modern mx-auto w-100 h-100">
+                <div class="card-icon" aria-hidden="true">👨🏻‍🎓</div>
+                <h3 class="aboutme-h3">President and Vice-President</h3>
+                <p class="aboutme-p u-justify">From 2019 to 2025 <strong>Vice President and President of the AURORA Student Association</strong> at the University of Calabria, gaining experience in association management, team building, and interpersonal skills development</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="row padding-card-2">
+            <div class="col-md-6 col-12 pb-5 d-flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="240">
+              <article class="aboutme-card-modern mx-auto w-100 h-100">
+                <div class="card-icon" aria-hidden="true">🎮</div>
+                <h3 class="aboutme-h3">League of UniCal Co-Founder &amp; Events Organizer</h3>
+                <p class="aboutme-p u-justify"><strong>Co-Founder of the League of UniCal community (&gt;100 members) and organizer of League of Legends tournaments (&gt;200 attendees) with Red Bull partnership</strong>, including university events and Cosenza Comics and Games, overseeing organizational and technical aspects</p>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-12 pb-5 d-flex" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="360">
+              <article class="aboutme-card-modern mx-auto w-100 h-100">
+                <div class="card-icon" aria-hidden="true">✈️</div>
+                <h3 class="aboutme-h3">Italian Group Leader &amp; Traveller</h3>
+                <p class="aboutme-p u-justify">Erasmus+ Youth Exchange “The Right to Choose – Choose Right!” (Apr 2019) as <strong>Italian Leader Group</strong> and other international programs; completed an <strong>English study program in Dublin</strong>. Passionate about travel, language learning, and meeting people from different cultures.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / QUOTE -->
+      <section id="contacts" class="row padding-cta" aria-labelledby="quote-title" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+        <h2 id="quote-title" class="sr-only">Contact</h2>
+        <div class="col-12 pt-5">
+          <section class="quote-section" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <p class="quote">
+              “With <strong>curiosity</strong> and <strong>passion</strong>,<br> I turn challenges into opportunities and <strong>ideas</strong> into impact.”
+            </p>
+          </section>
+          <a href="mailto:simonegatto.dev@gmail.com" class="last-cta cta mx-auto mt-5" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">Write me</a>
+        </div>
+      </section>
+    </main>
+
+    <a class="up-arrow" href="#home" aria-label="Back to top">
+      <img width="50" height="50" src="images/up.png" alt="Back to top arrow" loading="lazy" />
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="text-white text-center p-3">
+      <hr/>
+      <div class="contatti pt-5 padding-footer">
+        <address>
+          <a href="mailto:simonegatto.dev@gmail.com" title="Email">
+            <img width="40" height="40" src="images/new-mail.png" alt="Send Email" loading="lazy"/>
+          </a>
+          <a href="https://www.linkedin.com/in/simone-gatto23/" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <img width="30" height="30" src="images/linkedin.png" alt="LinkedIn" loading="lazy"/>
+          </a>
+        </address>
+        <p class="m-3 copy">Copyright © 2025 - Simone Gatto</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js" defer></script>
+
+    <script>
+      // Init AOS to trigger as soon as elements enter the viewport
+      window.addEventListener('DOMContentLoaded', function () {
+        var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (window.AOS && typeof AOS.init === 'function' && !prefersReduced) {
+          AOS.init({
+            duration: 700,                 // uniform, snappy
+            easing: 'ease-out',
+            offset: 0,                     // start right at viewport edge
+            anchorPlacement: 'top-bottom', // trigger when top hits bottom of viewport
+            once: true,                    // animate once
+            mirror: false                  // no reverse on scroll up
+          });
+        }
+      });
+    </script>
+
+    <script src="script/script.js" defer></script>
+
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        var up = document.querySelector('.up-arrow');
+        if (!up) return;
+    
+        var SHOW_AT = 400; // px di scroll prima di mostrare la freccia
+        function toggleUpArrow(){
+          if (window.scrollY > SHOW_AT) {
+            up.classList.add('is-visible');
+          } else {
+            up.classList.remove('is-visible');
+          }
+        }
+    
+        toggleUpArrow(); // stato iniziale
+        window.addEventListener('scroll', toggleUpArrow, { passive: true });
+      });
+    </script>
+
+    <!-- NAV ACTIVE: scroll-spy + lock -->
+    <script defer>
+      document.addEventListener('DOMContentLoaded', () => {
+        const nav = document.getElementById('navbar');
+        const links = Array.from(document.querySelectorAll('#navbar .nav-link[href^="#"]'));
+        const items = links.map(a => a.closest('.nav-item'));
+        const idToItem = new Map(links.map(a => [a.getAttribute('href').slice(1), a.closest('.nav-item')]));
+
+        // CSS var altezza navbar
+        const setNavHeightVar = () => {
+          const h = nav?.offsetHeight || 72;
+          document.documentElement.style.setProperty('--nav-h', `${h}px`);
+        };
+        const getNavOffset = () => {
+          const h = nav?.offsetHeight || 72;
+          const top = nav ? (nav.getBoundingClientRect().top || 0) : 0; // include safe-area
+          return Math.round(h + top + 16);
+        };
+        setNavHeightVar();
+        window.addEventListener('resize', setNavHeightVar);
+
+        // Stato active
+        const setActive = (id) => {
+          items.forEach(li => li && li.classList.remove('is-active','active'));
+          links.forEach(a => a && a.removeAttribute('aria-current'));
+          const li = idToItem.get(id);
+          if (li) {
+            li.classList.add('is-active');
+            const a = li.querySelector('.nav-link');
+            if (a) a.setAttribute('aria-current','page');
+          }
+        };
+
+        // Pulizia "active" hardcoded
+        items.forEach(li => li && li.classList.remove('active'));
+
+        // Sezioni
+        const sections = links
+          .map(a => document.getElementById(a.getAttribute('href').slice(1)))
+          .filter(Boolean);
+
+        let currentId = null;
+        let observer = null;
+
+        // LOCK durante scroll animato
+        let lockActiveUntil = 0;
+        let lockTargetId = null;
+
+        const unlockIfArrived = () => {
+          if (!lockTargetId) return;
+          const target = document.getElementById(lockTargetId);
+          if (!target) { lockTargetId = null; lockActiveUntil = 0; return; }
+          const epsilon = 4;
+          const y = target.getBoundingClientRect().top;
+          if (Math.abs(y) <= epsilon) { lockTargetId = null; lockActiveUntil = 0; }
+        };
+
+        // Scroll-spy (fallback robusto)
+        let raf = 0;
+        const spy = () => {
+          if (raf) return;
+          raf = requestAnimationFrame(() => {
+            raf = 0;
+            if (Date.now() < lockActiveUntil) return;
+
+            const offset = getNavOffset();
+            const probe = offset + Math.round(window.innerHeight * 0.2);
+            let bestId = null;
+            let bestTop = -Infinity;
+
+            for (const sec of sections) {
+              const r = sec.getBoundingClientRect();
+              if (r.top <= probe && r.bottom > probe) { bestId = sec.id; break; }
+              if (r.top <= probe && r.top > bestTop) { bestTop = r.top; bestId = sec.id; }
+            }
+            if (bestId && bestId !== currentId) { currentId = bestId; setActive(bestId); }
+          });
+        };
+        window.addEventListener('scroll', () => { unlockIfArrived(); spy(); }, { passive:true });
+        window.addEventListener('resize', () => { setNavHeightVar(); buildObserver(); spy(); });
+
+        // IntersectionObserver (innesco frequente)
+        const buildObserver = () => {
+          if (observer) observer.disconnect();
+          const navH = getNavOffset();
+          observer = new IntersectionObserver(() => {
+            if (Date.now() < lockActiveUntil) return;
+            spy();
+          }, {
+            root: null,
+            rootMargin: `-${navH}px 0px -30% 0px`,
+            threshold: [0, 0.01, 0.1, 0.25, 0.5, 0.75, 1]
+          });
+          sections.forEach(sec => observer.observe(sec));
+        };
+        buildObserver();
+
+        // Stato iniziale
+        const initial = location.hash ? location.hash.slice(1) : (sections[0]?.id || null);
+        if (initial) { currentId = initial; setActive(initial); }
+        spy();
+
+        // Click nav: lock + scroll con offset
+        links.forEach(a => {
+        a.addEventListener('click', (e) => {
+          const id = a.getAttribute('href').slice(1);
+          const target = document.getElementById(id);
+          if (!target) return;
+          e.preventDefault();
+
+          setActive(id);
+
+          const collapse = document.getElementById('navbarText');
+          const doScroll = () => {
+            // blocca lo spy durante lo smooth
+            lockActiveUntil = Date.now() + 900;
+            // rispetta scroll-margin-top del CSS
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.replaceState(null, '', `#${id}`);
+          };
+
+          // Se il menu è aperto: chiudi e scrolla dopo che è davvero chiuso
+          if (collapse && collapse.classList.contains('show')) {
+            const onHidden = () => {
+              collapse.removeEventListener('hidden.bs.collapse', onHidden);
+              requestAnimationFrame(doScroll);
+            };
+            collapse.addEventListener('hidden.bs.collapse', onHidden);
+
+            if (typeof $ === 'function' && typeof $(collapse).collapse === 'function') {
+              $(collapse).collapse('hide');
+            } else {
+              collapse.classList.remove('show');
+              requestAnimationFrame(doScroll);
+            }
+            document.body.style.overflow = '';
+          } else {
+            doScroll();
+          }
+        });
+      });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const collapse = document.getElementById('navbarText');
+        const body = document.body;
+    
+        // Bootstrap 4 events
+        collapse.addEventListener('show.bs.collapse', () => { body.style.overflow = 'hidden'; });
+        collapse.addEventListener('hidden.bs.collapse', () => { body.style.overflow = ''; });
+    
+        // Chiudi il menu anche se tocchi fuori (solo mobile/tablet)
+        document.addEventListener('click', (e) => {
+          const isToggle = e.target.closest('.navbar-toggler');
+          const isInsideMenu = e.target.closest('#navbarText');
+          if (!isToggle && !isInsideMenu && collapse.classList.contains('show')) {
+            collapse.classList.remove('show');
+            body.style.overflow = '';
+          }
+        }, { passive: true });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const collapseEl = document.getElementById('navbarText');
+        const body = document.body;
+      
+        // Aggiorna --nav-h con l'altezza reale della navbar (per scroll-margin-top)
+        function setNavHeightVar(){
+          const nav = document.querySelector('.navbar');
+          if(!nav) return;
+          document.documentElement.style.setProperty('--nav-h', nav.offsetHeight + 'px');
+        }
+        setNavHeightVar();
+        window.addEventListener('resize', setNavHeightVar);
+      
+        // Lock dello scroll quando il menu è aperto (iOS like)
+        collapseEl.addEventListener('show.bs.collapse', () => { body.style.overflow = 'hidden'; });
+        collapseEl.addEventListener('hidden.bs.collapse', () => { body.style.overflow = ''; });
+      
+        // CHIUDI il menu dopo click su link-àncora (href che inizia con #)
+        const closeOnClick = (e) => {
+          const href = e.currentTarget.getAttribute('href') || '';
+          if(!href.startsWith('#')) return;                 // solo ancore interne
+          // usa Bootstrap se disponibile, altrimenti fallback
+          if (typeof $ === 'function' && typeof $(collapseEl).collapse === 'function'){
+            $(collapseEl).collapse('hide');
+          } else {
+            collapseEl.classList.remove('show');
+          }
+          body.style.overflow = '';
+        };
+      
+        // Chiudi il menu se tocchi fuori (mobile/tablet)
+        document.addEventListener('click', (e) => {
+          const isToggle = e.target.closest('.navbar-toggler');
+          const isInside = e.target.closest('#navbarText');
+          if (!isToggle && !isInside && collapseEl.classList.contains('show')){
+            if (typeof $ === 'function' && typeof $(collapseEl).collapse === 'function'){
+              $(collapseEl).collapse('hide');
+            } else {
+              collapseEl.classList.remove('show');
+            }
+            body.style.overflow = '';
+          }
+        }, { passive: true });
+      });
+    </script>
+
+    <script>
+      /* Mobile-only toggle per hard skills nei project-card */
+      document.addEventListener('DOMContentLoaded', () => {
+        const mql = window.matchMedia('(max-width: 900px)');
+        const cards = Array.from(document.querySelectorAll('.project-card'));
+      
+        function enableMobileToggles(){
+          cards.forEach((card, idx) => {
+            const list = card.querySelector('.subtitle-blocks');
+            if(!list || card.classList.contains('has-toggle')) return;
+      
+            // ID univoco + stato ARIA
+            list.id = list.id || `skills-list-${idx}`;
+            list.setAttribute('aria-hidden', 'true');
+      
+            // Crea bottone
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'skills-toggle';
+            btn.setAttribute('aria-controls', list.id);
+            btn.setAttribute('aria-expanded', 'false');
+            btn.textContent = 'See hard skills';
+      
+            // Toggle handler
+            btn.addEventListener('click', () => {
+              const open = list.getAttribute('aria-hidden') === 'false';
+              list.setAttribute('aria-hidden', open ? 'true' : 'false');
+              btn.setAttribute('aria-expanded', (!open).toString());
+              btn.textContent = open ? 'See Hard Skills' : 'Hide Hard Skills';
+            });
+      
+            // Inserisci bottone prima della lista
+            card.insertBefore(btn, list);
+            card.classList.add('has-toggle');
+          });
+        }
+      
+        function disableMobileToggles(){
+          cards.forEach(card => {
+            const btn = card.querySelector('.skills-toggle');
+            const list = card.querySelector('.subtitle-blocks');
+            if(btn) btn.remove();
+            if(list){
+              list.setAttribute('aria-hidden', 'false'); // sempre visibile su desktop
+            }
+            card.classList.remove('has-toggle');
+          });
+        }
+      
+        function apply(){ mql.matches ? enableMobileToggles() : disableMobileToggles(); }
+        apply();
+      
+        // Safari compat: addEventListener | addListener fallback
+        if (mql.addEventListener) mql.addEventListener('change', apply);
+        else mql.addListener(apply);
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
