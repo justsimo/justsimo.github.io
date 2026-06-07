@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex"/>
+  <title>TALENT_FOUND — Simone Gatto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="fonts/fonts.css?v=3" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg1: #2278AD; --bg2: #2999B7;
+      --mono: 'Courier New', Courier, monospace;
+      --sans: 'Selawik Light', 'Inter', system-ui, sans-serif;
+      --head: 'Montserrat', sans-serif;
+      --dim: rgba(255,255,255,0.45);
+      --muted: rgba(255,255,255,0.65);
+    }
+
+    html {
+      min-height: 100%;
+      background: linear-gradient(145deg, var(--bg1) 0%, var(--bg2) 100%);
+      background-attachment: fixed;
+    }
+    body {
+      min-height: 100vh;
+      background: transparent;
+      color: #fff;
+      font-family: var(--sans);
+      display: flex; align-items: center; justify-content: center;
+      padding: 32px 20px;
+    }
+
+    main { width: 100%; max-width: 600px; }
+
+    /* ── Top label ──────────────────────────────── */
+    .top-label {
+      font-family: var(--mono);
+      font-size: 10px; letter-spacing: .16em;
+      color: var(--dim); text-transform: uppercase;
+      margin-bottom: 28px;
+      opacity: 0; animation: appear .3s ease forwards;
+      animation-delay: .1s;
+    }
+
+    /* ── Smiley ─────────────────────────────────── */
+    .smiley {
+      font-family: var(--head);
+      font-size: 88px; font-weight: 300; line-height: 1;
+      margin-bottom: 20px; display: block;
+      opacity: 0; animation: slideUp .5s ease forwards;
+      animation-delay: .3s;
+    }
+
+    /* ── Diagnostic log ─────────────────────────── */
+    .diag {
+      margin: 28px 0 32px;
+      display: flex; flex-direction: column; gap: 7px;
+    }
+    .diag-line {
+      font-family: var(--mono);
+      font-size: 12px; letter-spacing: .06em;
+      color: var(--muted);
+      display: flex; justify-content: space-between;
+      gap: 8px; flex-wrap: wrap;
+      opacity: 0; animation: appear .3s ease forwards;
+    }
+    .diag-line .key   { color: rgba(255,255,255,0.5); white-space: nowrap; }
+    .diag-line .dots  { flex: 1; border-bottom: 1px dotted rgba(255,255,255,0.2);
+                        margin: 0 6px 4px; min-width: 20px; }
+    .diag-line .val   { color: #fff; font-weight: 700; white-space: nowrap; }
+    .diag-line .val.ok { color: #7dffa0; }
+
+    .diag-line:nth-child(1) { animation-delay: .7s; }
+    .diag-line:nth-child(2) { animation-delay: 1.1s; }
+    .diag-line:nth-child(3) { animation-delay: 1.5s; }
+    .diag-line:nth-child(4) { animation-delay: 1.9s; }
+    .diag-line:nth-child(5) { animation-delay: 2.3s; }
+
+    /* ── Main content (appears after log) ────────── */
+    .content {
+      opacity: 0; animation: slideUp .6s ease forwards;
+      animation-delay: 3s;
+    }
+
+    .verdict {
+      font-family: var(--mono);
+      font-size: clamp(18px, 4vw, 24px);
+      font-weight: 700; letter-spacing: .06em;
+      margin-bottom: 20px;
+    }
+
+    .msg {
+      font-size: 16px; line-height: 1.7;
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 8px;
+    }
+    .msg-sub {
+      font-size: 14px; color: var(--muted);
+      margin-bottom: 36px; line-height: 1.6;
+    }
+
+    .prompt {
+      font-family: var(--mono); font-size: 11px;
+      letter-spacing: .12em; color: var(--dim);
+      text-transform: uppercase; margin-bottom: 20px;
+    }
+
+    /* ── Actions ─────────────────────────────────── */
+    .actions {
+      display: flex; gap: 12px;
+      justify-content: flex-start; flex-wrap: wrap;
+      margin-bottom: 52px;
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: 8px;
+      font-family: var(--sans); font-size: 15px; font-weight: 600;
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.3); }
+    .btn-primary { background: #fff; color: #0f2233; }
+    .btn-ghost   { background: rgba(255,255,255,0.1); color: #fff;
+                   border: 1px solid rgba(255,255,255,0.4); }
+
+    /* ── Footer ──────────────────────────────────── */
+    .stopcode {
+      font-family: var(--mono); font-size: 11px;
+      letter-spacing: .1em; color: rgba(255,255,255,0.3);
+      text-transform: uppercase; margin-bottom: 16px;
+    }
+    .back { font-size: 13px; color: rgba(255,255,255,0.4); }
+    .back a { color: var(--dim); text-decoration: underline;
+               text-underline-offset: 3px; }
+    .back a:hover { color: #fff; }
+
+    /* ── Animations ──────────────────────────────── */
+    @keyframes appear  { from { opacity:0; }          to { opacity:1; } }
+    @keyframes slideUp { from { opacity:0; transform:translateY(16px); }
+                         to   { opacity:1; transform:none; } }
+
+    @media(prefers-reduced-motion:reduce) {
+      * { animation: none !important; opacity: 1 !important; transform: none !important; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <p class="top-label">[ SYSTEM :: DIAGNOSTIC_COMPLETE ]</p>
+
+  <span class="smiley">:)</span>
+
+  <div class="diag" aria-label="System diagnostic log">
+    <div class="diag-line">
+      <span class="key">QR_CODE_SCANNED</span>
+      <span class="dots"></span>
+      <span class="val ok">TRUE</span>
+    </div>
+    <div class="diag-line">
+      <span class="key">SOURCE_IDENTIFIED</span>
+      <span class="dots"></span>
+      <span class="val">CURIOUS_HUMAN</span>
+    </div>
+    <div class="diag-line">
+      <span class="key">AI_ML_ENGINEER_REQUIRED</span>
+      <span class="dots"></span>
+      <span class="val ok">LIKELY</span>
+    </div>
+    <div class="diag-line">
+      <span class="key">PROFILE_MATCH_SCORE</span>
+      <span class="dots"></span>
+      <span class="val ok">98.7%</span>
+    </div>
+    <div class="diag-line">
+      <span class="key">RECOMMENDED_ACTION</span>
+      <span class="dots"></span>
+      <span class="val">SEE_BELOW</span>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1 class="verdict">TALENT_FOUND</h1>
+
+    <p class="msg">You scanned this because you need someone who builds AI systems that actually work in production.</p>
+    <p class="msg-sub">Good news: the error was on your end. You hadn't hired me yet.</p>
+
+    <p class="prompt">[ Initialize next steps? ]</p>
+
+    <div class="actions">
+      <a class="btn btn-primary"
+         href="https://drive.google.com/file/d/1HHSPSjnBYm_25A9JIma63bdTLTbkVdCe/view?usp=sharing"
+         target="_blank" rel="noopener">📄 Download CV</a>
+      <a class="btn btn-ghost"
+         href="https://www.linkedin.com/in/simone-gatto23/"
+         target="_blank" rel="noopener">🔗 Connect on LinkedIn</a>
+    </div>
+
+    <p class="stopcode">Stop code: PORTFOLIO_REVIEWED_OFFER_PENDING</p>
+    <p class="back">← <a href="index.html">Back to portfolio</a></p>
+  </div>
+
+</main>
+</body>
+</html>
