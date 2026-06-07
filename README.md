@@ -127,44 +127,6 @@ The CV is linked externally via Google Drive and is not included in the reposito
 
 ---
 
-## 💻 Run Locally
-
-Static site — open directly in a browser or run a local server:
-
-```bash
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
-
----
-
-## 🚀 Deploy on GitHub Pages
-
-1. Commit and push changes to the `main` branch.
-2. In repository Settings, enable GitHub Pages from the root of `main`.
-3. Visit the live URL once deployment completes.
-
-If style or script changes are not visible after deploying, update the cache-buster query strings in `index.html`:
-
-```html
-<link href="style.css?v=156" rel="stylesheet"/>
-```
-
----
-
-## 🧰 Maintenance Notes
-
-Before publishing updates:
-
-- Check that the **Download CV** button links to the current CV version.
-- Check that the **View Paper** button links to the correct DOI.
-- Verify all contact links are working.
-- Test on mobile and desktop before pushing.
-- Keep project descriptions concise and aligned with the current professional profile.
-- Update the **Now** box whenever focus areas shift.
-
----
-
 ## 📬 Contact
 
 - **Email:** [simonegatto.dev@gmail.com](mailto:simonegatto.dev@gmail.com)
